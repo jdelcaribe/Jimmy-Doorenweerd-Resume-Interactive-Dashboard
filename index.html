@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jimmy Doorenweerd - Interactive Resume Dashboard</title>
+  <meta name="description" content="B2B SaaS Customer Success Manager & Account Executive with 7+ years experience in NRR growth and AI automation">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- React & ReactDOM CDN -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  
+  <!-- Recharts CDN -->
+  <script src="https://unpkg.com/recharts@2.5.0/dist/Recharts.js"></script>
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Babel Standalone for JSX -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+  
+  <!-- Load the dashboard component -->
+  <script type="text/babel" src="dashboard.jsx"></script>
+  
+  <!-- Mount the component -->
+  <script type="text/babel">
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<JimmyDashboard />);
+  </script>
+</body>
+</html>
